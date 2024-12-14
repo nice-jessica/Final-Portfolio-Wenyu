@@ -1,62 +1,78 @@
-# Project: Marathon Data Analysis
+# Comprehensive Analysis Repository
 
-## Sub-project 1: Marathon Data Summary
+This repository contains three distinct projects focusing on marathon performance analysis, smoking cessation strategies in Major Depressive Disorder (MDD), and statistical simulation studies for optimal study design.
 
-### Description
-This sub-project involves summarizing marathon data by sex and generating various descriptive statistics for continuous and categorical variables.
+## Projects Overview
 
-### Libraries Used
-- dplyr
-- ggplot2
-- gtsummary
+### Project 1: Marathon Performance Analysis
 
-### Key Functions
-- `read.csv()`: To load the marathon data.
-- `tbl_summary()`: To generate a descriptive statistics table.
-- `print()`: To display the data and summary tables.
+#### Overview
+This project analyzes the effects of age, sex, and environmental conditions on marathon performance, utilizing data from major marathons over the past 15-20 years. By leveraging historical data from five major marathons, the analyses focus on how these variables impact athletic outcomes.
 
-### Outputs
-- Descriptive statistics table for marathon data.
-- Initial rows of the marathon data displayed.
+#### Prerequisites
+Before you begin the analysis, ensure that R is installed on your machine along with the following packages:
 
-## Sub-project 2: Marathon Performance Prediction
+- `ggplot2`
+- `randomForest`
+- `dplyr`
+- `xgboost`
+- `corrplot`
 
-### Description
-This sub-project focuses on predicting marathon performance using machine learning models like Random Forest and XGBoost, and visualizing feature importance.
+You can install these required packages using R commands:
 
-### Libraries Used
-- randomForest
-- xgboost
-- ggplot2
+```r
+install.packages("ggplot2")
+install.packages("randomForest")
+install.packages("dplyr")
+install.packages("xgboost")
+install.packages("corrplot")
 
-### Key Functions
-- `randomForest()`: To train a Random Forest model on marathon data.
-- `xgb.train()`: To train an XGBoost model.
-- `importance()`, `xgb.importance()`: To extract feature importance from the models.
-- `ggplot()`: To visualize feature importance.
+# Project 2: Smoking Cessation and Psychological Influences in MDD
 
-### Outputs
-- Random Forest and XGBoost models trained on marathon data.
-- Plots of feature importance from each model.
+## Overview
+This project explores how baseline psychological and behavioral characteristics affect the success rates of smoking cessation interventions, specifically in individuals with Major Depressive Disorder (MDD). The study aims to enhance personalized treatment strategies to improve cessation success rates by investigating interactions between psychological profiles, treatment types, and pharmacotherapy.
 
-## Sub-project 3: Impact of Weather on Marathon Performance
+## Prerequisites
+Before you begin the analysis, ensure that R is installed on your machine along with the necessary packages for statistical modeling and data visualization:
 
-### Description
-This sub-project investigates how different weather parameters like temperature and humidity impact marathon performance using regression analysis.
+- `ggplot2`
+- `caret`
+- `e1071`
+- `nnet`
+- `MASS`
 
-### Libraries Used
-- ggplot2
-- dplyr
-- corrplot
-- gtsummary
+You can install these required packages using the following R commands:
 
-### Key Functions
-- `cor()`, `corrplot()`: To visualize correlations between weather parameters and performance.
-- `lm()`: To fit a linear model to assess the impact of weather parameters.
-- `tbl_regression()`: To display regression analysis results in a formatted table.
-- `ggplot()`: To visualize relationships between weather parameters and marathon performance.
+```r
+install.packages("ggplot2")
+install.packages("caret")
+install.packages("e1071")
+install.packages("nnet")
+install.packages("MASS")
 
-### Outputs
-- Correlation matrix of selected variables.
-- Regression model summary.
-- Visualizations of the effect of weather parameters on performance.
+
+# Project 3: Statistical Simulation Study
+
+## Overview
+This project focuses on running statistical simulations to determine the optimal study design under budget constraints. The simulations compare normal and Poisson distributions using a variety of cost parameters. The project includes multiple simulations aimed at:
+
+- Estimating the mean squared error (MSE) of beta estimates under normal and Poisson models.
+- Optimizing the study design by adjusting the number of clusters and observations per cluster to stay within a set budget.
+- Comparing the impact of cost ratios on MSE.
+
+## Prerequisites
+Before you begin the simulations, ensure that R is installed on your machine along with the following packages:
+
+- `ggplot2`
+- `plotly`
+- `gt`
+- `dplyr`
+- `lme4`
+- `tidyverse`
+- `parallel`
+- `gridExtra`
+
+You can install these required packages using the following R command:
+
+```r
+install.packages(c("ggplot2", "plotly", "gt", "dplyr", "lme4", "tidyverse", "parallel", "gridExtra"))
